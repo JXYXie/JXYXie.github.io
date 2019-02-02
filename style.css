@@ -1,0 +1,118 @@
+ul.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: -webkit-sticky;	/* Safari */
+	position: sticky;
+	top: 0;
+	background-image: linear-gradient(to right, rgb(75, 80, 85), rgb(5, 10, 15));
+}
+
+ul.navbar li {
+	float: left;
+}
+
+ul.navbar li a {
+	display: block;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 16px 24px;
+	text-decoration: none;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	transition-property: color, background-color;
+	-webkit-transition-property: color, background-color;
+}
+
+ul.navbar li a:hover:not(.active) {
+	background-color: rgb(79, 141, 147);
+}
+
+ul.navbar li a.active, ul.navbar li a.focus {
+	background-color: rgb(9, 44, 51);
+	color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 600px) {
+	ul.navbar li.right, 
+	ul.navbar li {float: none;}
+}
+
+body {
+	margin: 0;
+	color: rgb(255, 255, 255);
+	background: rgb(2, 7, 20) url(assets/bg.jpg) center top;
+	background-attachment: scroll;
+}
+
+header {
+  margin: 5.0%;
+  font-size: 48px;
+}
+
+h1 {
+  margin-left: 5.0%;
+	font-size: 40px;
+}
+
+h2 {
+  margin-left: 5.0%;
+	font-size: 32px;
+}
+
+h3 {
+  margin-left: 5.0%;
+	font-size: 24px;
+}
+
+p {
+  margin-left: 5.0%;
+	color: rgb(255, 255, 255);
+  font-size: 20px;
+  width: 75%;
+  word-wrap: normal;
+}
+
+.cc h2.label span{
+  position: relative;
+}
+.cc:hover h2.label span{
+  display: none;
+}
+.cc:hover h2.label:after{
+  content: 'Anime';
+}
+
+sup {
+  vertical-align: super;
+  font-size: 8px;
+}
+
+#tables {
+  margin:5%;
+	border-collapse: collapse;
+	width: 90%;
+}
+
+#tables td, #tables th {
+	border: 1px solid rgb(221, 221, 221);
+	padding: 8px;
+}
+
+#tables th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: rgba(79, 141, 147, 0.3);
+	color: rgb(255, 255, 255);
+}
+
+img {
+  width: 120px;
+  height: auto;
+}
+
