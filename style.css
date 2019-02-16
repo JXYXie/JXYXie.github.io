@@ -1,0 +1,46 @@
+body {
+	background-color: #E0E0E0;
+}
+
+table {
+	border-collapse: collapse;
+	font-family: arial, sans-serif;
+}
+
+td {
+	padding: 5px;
+	text-align: center;
+}
+
+input[type=text] {
+	width: 100%;
+	height: 50px;
+	text-align: right;
+	font-family: monospace;
+	font-weight: bold;
+	background-color: #E0E0E0;
+}
+
+input[type=button] {
+	background-color: #F1F1F1;
+	border: 1px solid #E0E0E0;
+	color: black;
+	height: 40px;
+	width: 60px;
+	text-align: center;
+	font-weight: normal;
+}
+
+input[type=button]:hover {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+	background-color: #B5B5B5;
+	opacity: 1;
+	border: 1px solid #E0E0E0;
+	color: black;
+	cursor: pointer;
+}
+
+input[name=operator] {
+	border: 1px solid #E0E0E0;
+	background-color: #ECECEC;
+}

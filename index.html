@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" media="screen" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Xin Yan (Jack) Xie">
+        <meta name="description" content="A simple calculator using javascript.">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="output" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="btn_lbracket" type="button" name="operator" value="(" onclick="set('(')" />
+                </td>
+                <td>
+                    <input id="btn_rbracket" type="button" name="operator" value=")" onclick="set(')')" />
+                </td>
+                <td>
+                    <input id="btn_clear" type="button" name="operator" value="CE" onclick="backspace()" />
+                </td>
+                <td>
+                    <input id="btn_backspace" type="button" name="operator" value="C" onclick="clearscreen()" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="btn_7" type="button" value="7" onclick="set('7')" />
+                </td>
+                <td>
+                    <input id="btn_8" type="button" value="8" onclick="set('8')" />
+                </td>
+                <td>
+                    <input id="btn_9" type="button" value="9" onclick="set('9')" />
+                </td>
+                <td>
+                    <input id="btn_divide" type="button" name="operator" value="÷" onclick="set('/')" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="btn_4" type="button" value="4" onclick="set('4')" />
+                </td>
+                <td>
+                    <input id="btn_5" type="button" value="5" onclick="set('5')" />
+                </td>
+                <td>
+                    <input id="btn_6" type="button" value="6" onclick="set('6')" />
+                </td>
+                <td>
+                    <input id="btn_multiply" type="button" name="operator" value="×" onclick="set('*')" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="btn_1" type="button" value="1" onclick="set('1')" />
+                </td>
+                <td>
+                    <input id="btn_2" type="button" value="2" onclick="set('2')" />
+                </td>
+                <td>
+                    <input id="btn+3" type="button" value="3" onclick="set('3')" />
+                </td>
+                <td>
+                    <input id="btn_subtract" type="button" name="operator" value="-" onclick="set('-')" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="btn_0" type="button" value="0" onclick="set('0')" />
+                </td>
+                <td>
+                    <input id="btn_decimal" type="button" value="."  onclick="set('.')"/>
+                </td>
+                <td>
+                    <input id="btn_equals" type="button" value="=" onclick="equals()" />
+                </td>
+                <td>
+                    <input id="btn_dd" type="button" name="operator" value="+" onclick="set('+')" />
+                </td>
+        </table>
+        <script src="calculator.js"></script>
+    </body>
+
+</html>
